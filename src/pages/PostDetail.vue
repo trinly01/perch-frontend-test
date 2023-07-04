@@ -1,14 +1,20 @@
 <template>
   <div>
     <v-post v-if="post.id" :post="post" />
-    <div v-else-if="loading" >Loading...</div>
-    <NotFound v-else />
-    <button @click="prevPost" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 mt-4 mr-2">
-      Previous Post
-    </button>
-    <button @click="nextPost" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 mt-4">
-      Next Post
-    </button>
+    <div v-else-if="loading" class="flex items-center justify-center p-4">
+      <div>Loading...</div>
+    </div>
+    <div v-else class="flex items-center justify-center p-4">
+      <NotFound />
+    </div>
+    <div class="p-4">
+      <button @click="prevPost" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 mt-4 mr-2">
+        Previous Post
+      </button>
+      <button @click="nextPost" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 mt-4">
+        Next Post
+      </button>
+    </div>
   </div>
 </template>
 
@@ -23,13 +29,13 @@ const store = usePostStore();
 const route = useRoute();
 const router = useRouter()
 
-const postId = parseInt(route.params.id);
+// const postId = parseInt(route.params.id);
 
 const loading = ref(true)
 
 onMounted(async() => {
   console.log('route.params.id', route.params.id)
-  const postId = parseInt(route.params.id);
+  const postId = parseInt(route.params.id.toString());
   let currentIndex = store.posts.findIndex((post) => post.id === postId);
   console.log('currentIndex', currentIndex)
   try {

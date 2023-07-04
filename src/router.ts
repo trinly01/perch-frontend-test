@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import Home from '@/pages/Home.vue';
-import PostDetail from '@/pages/PostDetail.vue';
+import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router';
+// import Home from '@/pages/Home.vue';
+// import PostDetail from '@/pages/PostDetail.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {

@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import axios from 'axios';
-import { Post } from '@/types';
+import { type Post } from '@/types';
 
 export const usePostStore = defineStore('post', {
   state: () => ({

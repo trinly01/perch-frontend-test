@@ -10,14 +10,14 @@
         <span class="hidden sm:inline pl-2">Trinmar Boado</span>
       </a>
     </header>
-    <main class="mt-16 p-4">
+    <main class="mt-16 flex items-center justify-center">
       <router-view />
     </main>
   </div>
 </template>
 
 
-<script setup>
+<script setup lang="ts">
 import { usePostStore } from '@/stores/posts';
 import { onMounted } from 'vue';
 
