@@ -7,16 +7,19 @@
     <div v-else class="flex items-center justify-center p-4">
       <NotFound />
     </div>
-    <div class="p-4">
-      <button @click="prevPost" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 mt-4 mr-2">
-        Previous Post
-      </button>
-      <button @click="nextPost" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 mt-4">
-        Next Post
-      </button>
+    <div class="p-4 max-w-screen-xl mx-auto">
+      <div class="flex">
+        <button @click="prevPost" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 mt-4 mr-2">
+          Previous Post
+        </button>
+        <button @click="nextPost" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 mt-4">
+          Next Post
+        </button>
+      </div>
     </div>
   </div>
 </template>
+
 
 <script setup lang="ts">
 import { usePostStore } from '@/stores/posts';

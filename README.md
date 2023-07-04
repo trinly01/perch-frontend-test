@@ -30,3 +30,5 @@ npm run serve
 
 ## Deploy
 https://dev.to/jelizarovas/comment/22iei
+
+https://stackoverflow.com/questions/76115552/vue-3-vite-not-respecting-base-url-when-routing-route-refresh-produces-404
