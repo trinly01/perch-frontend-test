@@ -24,3 +24,7 @@ npm run serve
 - [Axios](https://www.npmjs.com/package/axios)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Pinia](https://pinia.vuejs.org/)
+
+
+## Deploy
+https://dev.to/jelizarovas/comment/22iei
