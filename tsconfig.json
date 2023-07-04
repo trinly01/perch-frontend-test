@@ -9,9 +9,11 @@
     }
   ],
   "compilerOptions": {
+    "types": ["node"],
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]
     }
-  }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
