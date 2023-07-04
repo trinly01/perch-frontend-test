@@ -5,7 +5,7 @@
         <span class="text-white font-bold mr-2">I 💌</span>
         <img src="https://images.squarespace-cdn.com/content/v1/6321f086e7cc2a366b6b0478/6410b9bf-c37e-4982-9d86-dbf1f8cde4d8/Logo.png?format=1500w" alt="Perch Logo" class="h-8">
       </router-link>
-      <a href="https://github.com/trinly01" target="_blank" rel="noopener noreferrer" class="text-white">
+      <a href="https://github.com/trinly01/perch-frontend-test/" target="_blank" rel="noopener noreferrer" class="text-white">
         <i class="fa-brands fa-github"></i>
         <span class="hidden sm:inline pl-2">Trinmar Boado</span>
       </a>
