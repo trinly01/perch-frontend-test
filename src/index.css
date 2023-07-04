@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Niramit&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
